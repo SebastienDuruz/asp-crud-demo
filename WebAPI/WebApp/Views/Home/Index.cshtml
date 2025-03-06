@@ -1,0 +1,13 @@
+﻿@using WebAPI.Models
+@{
+    ViewData["Title"] = "Home Page";
+    List<Article> articles = (List<Article>)ViewData["Articles"];
+}
+
+<div class="text-center">
+    @foreach(Article article in articles) {
+        <h2>@article.Title</h2>
+        <p>@article.Content</p>
+        <p>@article.Date</p>
+    }
+</div>
