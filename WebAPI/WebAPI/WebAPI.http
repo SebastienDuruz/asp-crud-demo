@@ -1,0 +1,10 @@
+@WebAPI_HostAddress = https://localhost:7138
+
+
+GET {{WebAPI_HostAddress}}/
+
+###
+
+GET {{WebAPI_HostAddress}}/Article
+
+###
